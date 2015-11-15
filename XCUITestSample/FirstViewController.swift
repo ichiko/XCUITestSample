@@ -11,6 +11,7 @@ import UIKit
 class FirstViewController: UIViewController {
     @IBOutlet weak var textInput: UITextField!
     @IBOutlet weak var calculateLabel: UILabel!
+    @IBOutlet weak var calculateLabel2: UILabel!
     @IBOutlet weak var progressLabel: UILabel!
 
     override func viewDidLoad() {
@@ -24,7 +25,9 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func clickCalculateButton(sender: AnyObject) {
-        calculateLabel.text = doubleNumber(textInput.text)
+        let result = doubleNumber(textInput.text)
+        calculateLabel.text = result
+        calculateLabel2.text = result
     }
 
     private func doubleNumber(numberText: String?) -> String {

@@ -20,27 +20,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q38-B0-e38">
                                 <rect key="frame" x="20" y="95" width="80" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPL-wf-b8s">
                                 <rect key="frame" x="20" y="142" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS6-8v-cLv">
                                 <rect key="frame" x="510" y="190" width="70" height="21"/>
-                                <accessibility key="accessibilityConfiguration" identifier="SliderIdentifier" label="SliderLabel"/>
+                                <accessibility key="accessibilityConfiguration" identifier="SliderIdentifier"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="cux-Qh-kmV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZZC-Sz-05c">
                                 <rect key="frame" x="117" y="91" width="97" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TextInputIdentifier"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="ji2-q6-Jr3"/>
                                 </constraints>
@@ -66,7 +67,7 @@
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbi-ta-VhW">
                                 <rect key="frame" x="291" y="91" width="30" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="CalculateButtonIdentifier" label="CalculateButtonLabel"/>
+                                <accessibility key="accessibilityConfiguration" identifier="CalculateButtonIdentifier"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="uGu-xm-PNS"/>
                                 </constraints>
@@ -77,7 +78,7 @@
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UhZ-wh-OUI">
                                 <rect key="frame" x="115" y="186" width="402" height="31"/>
-                                <accessibility key="accessibilityConfiguration" identifier="ProgressSliderIdentifier" label="ProgressSliderLabel"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ProgressSliderIdentifier"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="UiN-KB-Wd8"/>
                                 </constraints>
@@ -87,12 +88,21 @@
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX8-Tj-hjY">
                                 <rect key="frame" x="538" y="94" width="42" height="21"/>
-                                <accessibility key="accessibilityConfiguration" identifier="CalculatedIdentifier" label="CalculatedLabel"/>
+                                <accessibility key="accessibilityConfiguration" identifier="calculatedLabelIdentifier"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="bep-fV-fvg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g3-gF-85p">
+                                <rect key="frame" x="538" y="132" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="WAp-lX-9ds"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -107,12 +117,14 @@
                             <constraint firstItem="YX8-Tj-hjY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EsJ-Tf-ovv"/>
                             <constraint firstItem="ZZC-Sz-05c" firstAttribute="leading" secondItem="Q38-B0-e38" secondAttribute="trailing" constant="17" id="Hcw-eN-JKf"/>
                             <constraint firstItem="HS6-8v-cLv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Her-ga-CsP"/>
+                            <constraint firstItem="7g3-gF-85p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LNt-UX-jQ0"/>
                             <constraint firstItem="YX8-Tj-hjY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="MgN-AB-OEZ"/>
                             <constraint firstItem="5dM-dh-1FT" firstAttribute="top" secondItem="ZZC-Sz-05c" secondAttribute="bottom" constant="18" id="RtD-KY-uFs"/>
                             <constraint firstItem="Qh9-6f-Ye9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="Vxb-Al-p4k"/>
                             <constraint firstItem="HS6-8v-cLv" firstAttribute="leading" secondItem="UhZ-wh-OUI" secondAttribute="trailing" constant="-5" id="Yif-B9-mYI"/>
                             <constraint firstItem="GPL-wf-b8s" firstAttribute="top" secondItem="Q38-B0-e38" secondAttribute="bottom" constant="26" id="acK-RZ-SNt"/>
                             <constraint firstItem="HS6-8v-cLv" firstAttribute="top" secondItem="YX8-Tj-hjY" secondAttribute="bottom" constant="75" id="cXx-Qp-lLN"/>
+                            <constraint firstItem="7g3-gF-85p" firstAttribute="top" secondItem="YX8-Tj-hjY" secondAttribute="bottom" constant="17" id="fLh-JA-qEz"/>
                             <constraint firstItem="UhZ-wh-OUI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="mCu-AW-3RJ"/>
                             <constraint firstItem="ZZC-Sz-05c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="oMr-sE-APp"/>
                             <constraint firstItem="wbi-ta-VhW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="oUj-49-c1u"/>
@@ -125,6 +137,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="calculateLabel" destination="YX8-Tj-hjY" id="pNI-EA-Z3g"/>
+                        <outlet property="calculateLabel2" destination="7g3-gF-85p" id="Obp-hg-cQE"/>
                         <outlet property="progressLabel" destination="HS6-8v-cLv" id="lca-qa-2hh"/>
                         <outlet property="textInput" destination="ZZC-Sz-05c" id="NWv-Hs-uRv"/>
                     </connections>

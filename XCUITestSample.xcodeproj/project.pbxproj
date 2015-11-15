@@ -12,7 +12,7 @@
 		EC574B841BF81B0700C75D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC574B821BF81B0700C75D89 /* Main.storyboard */; };
 		EC574B861BF81B0700C75D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC574B851BF81B0700C75D89 /* Assets.xcassets */; };
 		EC574B891BF81B0700C75D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC574B871BF81B0700C75D89 /* LaunchScreen.storyboard */; };
-		EC574B941BF81B0700C75D89 /* XCUITestSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC574B931BF81B0700C75D89 /* XCUITestSampleUITests.swift */; };
+		EC574B941BF81B0700C75D89 /* FirstViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC574B931BF81B0700C75D89 /* FirstViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 		EC574B881BF81B0700C75D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC574B8A1BF81B0700C75D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC574B8F1BF81B0700C75D89 /* XCUITestSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUITestSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC574B931BF81B0700C75D89 /* XCUITestSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestSampleUITests.swift; sourceTree = "<group>"; };
+		EC574B931BF81B0700C75D89 /* FirstViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewTests.swift; sourceTree = "<group>"; };
 		EC574B951BF81B0700C75D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +90,7 @@
 		EC574B921BF81B0700C75D89 /* XCUITestSampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EC574B931BF81B0700C75D89 /* XCUITestSampleUITests.swift */,
+				EC574B931BF81B0700C75D89 /* FirstViewTests.swift */,
 				EC574B951BF81B0700C75D89 /* Info.plist */,
 			);
 			path = XCUITestSampleUITests;
@@ -205,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC574B941BF81B0700C75D89 /* XCUITestSampleUITests.swift in Sources */,
+				EC574B941BF81B0700C75D89 /* FirstViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
