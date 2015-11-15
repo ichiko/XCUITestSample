@@ -13,6 +13,8 @@
 		EC574B861BF81B0700C75D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC574B851BF81B0700C75D89 /* Assets.xcassets */; };
 		EC574B891BF81B0700C75D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC574B871BF81B0700C75D89 /* LaunchScreen.storyboard */; };
 		EC574B941BF81B0700C75D89 /* FirstViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC574B931BF81B0700C75D89 /* FirstViewTests.swift */; };
+		ECA8C50E1BF86E19009C9737 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8C50D1BF86E19009C9737 /* SnapshotHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		ECA8C5101BF87249009C9737 /* XCTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8C50F1BF87249009C9737 /* XCTestHelper.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		EC574B8F1BF81B0700C75D89 /* XCUITestSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCUITestSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC574B931BF81B0700C75D89 /* FirstViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewTests.swift; sourceTree = "<group>"; };
 		EC574B951BF81B0700C75D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA8C50D1BF86E19009C9737 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		ECA8C50F1BF87249009C9737 /* XCTestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +94,10 @@
 		EC574B921BF81B0700C75D89 /* XCUITestSampleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				ECA8C50D1BF86E19009C9737 /* SnapshotHelper.swift */,
 				EC574B931BF81B0700C75D89 /* FirstViewTests.swift */,
 				EC574B951BF81B0700C75D89 /* Info.plist */,
+				ECA8C50F1BF87249009C9737 /* XCTestHelper.swift */,
 			);
 			path = XCUITestSampleUITests;
 			sourceTree = "<group>";
@@ -205,7 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA8C5101BF87249009C9737 /* XCTestHelper.swift in Sources */,
 				EC574B941BF81B0700C75D89 /* FirstViewTests.swift in Sources */,
+				ECA8C50E1BF86E19009C9737 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +395,7 @@
 				EC574B9A1BF81B0700C75D89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC574B9B1BF81B0700C75D89 /* Build configuration list for PBXNativeTarget "XCUITestSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +404,7 @@
 				EC574B9D1BF81B0700C75D89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
