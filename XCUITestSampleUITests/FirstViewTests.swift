@@ -64,10 +64,10 @@ class FirstViewTests: XCTestCase {
         progressslideridentifierSlider.adjustToNormalizedSliderPosition(0.0)
         XCTAssertEqual(progressLabel.label, "0.0")
         
-        progressslideridentifierSlider.swipeRight()
+        progressslideridentifierSlider.adjustToNormalizedSliderPosition(1.0)
         XCTAssertEqual(progressLabel.label, "1.0")
         
-        progressslideridentifierSlider.swipeLeft()
+        progressslideridentifierSlider.adjustToNormalizedSliderPosition(0.0)
         XCTAssertEqual(progressLabel.label, "0.0")
         
         progressslideridentifierSlider.adjustToNormalizedSliderPosition(0.3)
