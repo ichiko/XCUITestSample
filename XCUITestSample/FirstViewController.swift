@@ -24,20 +24,20 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func clickCalculateButton(sender: AnyObject) {
+    @IBAction func clickCalculateButton(_ sender: AnyObject) {
         let result = doubleNumber(textInput.text)
         calculateLabel.text = result
         calculateLabel2.text = result
     }
 
-    private func doubleNumber(numberText: String?) -> String {
+    fileprivate func doubleNumber(_ numberText: String?) -> String {
         guard numberText != nil, let result = Int(numberText!) else {
             return "計算できません"
         }
         return "\(result * 2)"
     }
 
-    @IBAction func changeProgressSlider(sender: UISlider) {
+    @IBAction func changeProgressSlider(_ sender: UISlider) {
         let display = NSString(format: "%.1f", sender.value) as String
         progressLabel.text = display
     }

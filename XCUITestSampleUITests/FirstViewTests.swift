@@ -20,6 +20,17 @@ class FirstViewTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+
+    func testCalculateWithoutNumber() {
+        let app = XCUIApplication()
+        app.buttons["CalculateButtonIdentifier"].tap()
+
+        let resultLabel = app.staticTexts.element(boundBy: 2)
+        // 見切れていても、設定されている文字列は等しくなる
+        XCTAssertEqual(resultLabel.label, "計算できません")
+        XCTAssertTrue(app.staticTexts["計算できません"].exists)
+        screenshot("01_calculate1")
+    }
     
     func testCalculate1() {
         let app = XCUIApplication()
@@ -27,7 +38,7 @@ class FirstViewTests: XCTestCase {
         textField.tap()
         textField.typeText("3")
         app.buttons["CalculateButtonIdentifier"].tap()
-        let resultLabel = app.staticTexts.elementBoundByIndex(2)
+        let resultLabel = app.staticTexts.element(boundBy: 2)
         XCTAssertEqual(resultLabel.label, "6")
         XCTAssertTrue(app.staticTexts["6"].exists)
         screenshot("01_calculate1")
@@ -40,7 +51,7 @@ class FirstViewTests: XCTestCase {
         textField.typeText("2")
         app.buttons["CalculateButtonIdentifier"].tap()
         
-        let resultLabel = app.staticTexts.elementBoundByIndex(1)
+        let resultLabel = app.staticTexts.element(boundBy: 1)
         XCTAssertEqual(resultLabel.label, "4")
         
         let resultLabel2 = app.staticTexts["calculatedLabelIdentifier"]
@@ -57,25 +68,24 @@ class FirstViewTests: XCTestCase {
     func testSlider() {
         let app = XCUIApplication()
         let progressslideridentifierSlider = app.sliders["ProgressSliderIdentifier"]
-        print(progressslideridentifierSlider.value) // -> "50%"
         progressslideridentifierSlider.tap()
         let progressLabel = app.staticTexts["SliderIdentifier"]
         XCTAssertEqual(progressLabel.label, "0.5")
         
         screenshot("04_slider_initialState")
 
-        progressslideridentifierSlider.adjustToNormalizedSliderPosition(0.0)
+        progressslideridentifierSlider.adjust(toNormalizedSliderPosition: 0.0)
         XCTAssertEqual(progressLabel.label, "0.0")
         
-        progressslideridentifierSlider.adjustToNormalizedSliderPosition(1.0)
+        progressslideridentifierSlider.adjust(toNormalizedSliderPosition: 1.0)
         XCTAssertEqual(progressLabel.label, "1.0")
         
         screenshot("04_slider_rightfull")
 
-        progressslideridentifierSlider.adjustToNormalizedSliderPosition(0.0)
+        progressslideridentifierSlider.adjust(toNormalizedSliderPosition: 0.0)
         XCTAssertEqual(progressLabel.label, "0.0")
         
-        progressslideridentifierSlider.adjustToNormalizedSliderPosition(0.3)
+        progressslideridentifierSlider.adjust(toNormalizedSliderPosition: 0.3)
         XCTAssertEqual(progressLabel.label, "0.3")
     }
 }

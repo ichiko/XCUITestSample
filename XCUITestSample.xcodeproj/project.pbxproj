@@ -13,8 +13,8 @@
 		EC574B861BF81B0700C75D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC574B851BF81B0700C75D89 /* Assets.xcassets */; };
 		EC574B891BF81B0700C75D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC574B871BF81B0700C75D89 /* LaunchScreen.storyboard */; };
 		EC574B941BF81B0700C75D89 /* FirstViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC574B931BF81B0700C75D89 /* FirstViewTests.swift */; };
-		ECA8C50E1BF86E19009C9737 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8C50D1BF86E19009C9737 /* SnapshotHelper.swift */; settings = {ASSET_TAGS = (); }; };
-		ECA8C5101BF87249009C9737 /* XCTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8C50F1BF87249009C9737 /* XCTestHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		ECA8C50E1BF86E19009C9737 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8C50D1BF86E19009C9737 /* SnapshotHelper.swift */; };
+		ECA8C5101BF87249009C9737 /* XCTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA8C50F1BF87249009C9737 /* XCTestHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,9 +151,11 @@
 				TargetAttributes = {
 					EC574B7A1BF81B0700C75D89 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
 					};
 					EC574B8E1BF81B0700C75D89 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = EC574B7A1BF81B0700C75D89;
 					};
 				};
@@ -338,6 +340,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ichiko.revjune.XCUITestSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -349,6 +352,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ichiko.revjune.XCUITestSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -359,6 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ichiko.revjune.XCUITestSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = XCUITestSample;
 				USES_XCTRUNNER = YES;
 			};
@@ -371,6 +376,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ichiko.revjune.XCUITestSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = XCUITestSample;
 				USES_XCTRUNNER = YES;
 			};

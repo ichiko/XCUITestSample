@@ -9,8 +9,8 @@
 import XCTest
 
 extension XCTestCase {
-    func screenshot(name: String, waitForLoadingIndicator: Bool = true) {
-        let fileName = NSString(format: "%@_%@", NSStringFromClass(self.dynamicType), name) as String
+    func screenshot(_ name: String, waitForLoadingIndicator: Bool = true) {
+        let fileName = NSString(format: "%@_%@", NSStringFromClass(type(of: self)), name) as String
         snapshot(fileName, waitForLoadingIndicator: waitForLoadingIndicator)
     }
 }
