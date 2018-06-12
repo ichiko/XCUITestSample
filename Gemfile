@@ -1,4 +1,5 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem "snapshot"
+# gem "snapshot"
+gem "fastlane"

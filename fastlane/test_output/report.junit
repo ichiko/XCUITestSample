@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TestSampleEarlGreyTests.xctest' tests='6' failures='0'>
+  <testsuite name='XCUITestSampleUITests.FirstViewTests' tests='5' failures='0'>
+    <testcase classname='XCUITestSampleUITests.FirstViewTests' name='testCalculate1' time='10.404'/>
+    <testcase classname='XCUITestSampleUITests.FirstViewTests' name='testCalculate2' time='10.652'/>
+    <testcase classname='XCUITestSampleUITests.FirstViewTests' name='testCalculateWithoutNumber' time='9.000'/>
+    <testcase classname='XCUITestSampleUITests.FirstViewTests' name='testSelectSegment' time='6.604'/>
+    <testcase classname='XCUITestSampleUITests.FirstViewTests' name='testSlider' time='12.791'/>
+  </testsuite>
+  <testsuite name='TestSampleEarlGreyTests.TestSampleEarlGreyTests' tests='1' failures='0'>
+    <testcase classname='TestSampleEarlGreyTests.TestSampleEarlGreyTests' name='testExample' time='1.224'/>
+  </testsuite>
+</testsuites>

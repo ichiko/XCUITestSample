@@ -1,0 +1,16 @@
+PODS:
+  - EarlGrey (1.13.0)
+
+DEPENDENCIES:
+  - EarlGrey
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EarlGrey
+
+SPEC CHECKSUMS:
+  EarlGrey: 9c50bc1f8e47e361dc2fe2053288bdcaebf9a3e5
+
+PODFILE CHECKSUM: 1998f0e895a94d360202a9e19055945832d234f7
+
+COCOAPODS: 1.5.3

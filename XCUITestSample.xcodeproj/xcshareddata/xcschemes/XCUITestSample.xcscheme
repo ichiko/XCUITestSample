@@ -26,7 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "NO">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,6 +35,16 @@
                BlueprintIdentifier = "EC574B8E1BF81B0700C75D89"
                BuildableName = "XCUITestSampleUITests.xctest"
                BlueprintName = "XCUITestSampleUITests"
+               ReferencedContainer = "container:XCUITestSample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5F0539ED20C7EF2000586BE9"
+               BuildableName = "TestSampleEarlGreyTests.xctest"
+               BlueprintName = "TestSampleEarlGreyTests"
                ReferencedContainer = "container:XCUITestSample.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -50,6 +60,13 @@
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "DYLD_INSERT_LIBRARIES"
+            value = "@executable_path/EarlGrey.framework/EarlGrey"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
